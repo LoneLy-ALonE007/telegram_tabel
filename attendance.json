@@ -1,0 +1,40 @@
+{
+    "5015267145": [
+        {
+            "action": "Keldi",
+            "timestamp": "2025-09-11T11:39:27.264984",
+            "latitude": 41.350613,
+            "longitude": 69.292088
+        },
+        {
+            "action": "Keldi",
+            "timestamp": "2025-09-11T11:39:30.347353",
+            "latitude": 41.350613,
+            "longitude": 69.292088
+        },
+        {
+            "action": "Ketti",
+            "timestamp": "2025-09-11T11:39:31.236732",
+            "latitude": 41.350613,
+            "longitude": 69.292088
+        },
+        {
+            "action": "Keldi",
+            "timestamp": "2025-09-12T09:51:51.157034",
+            "latitude": 41.350659,
+            "longitude": 69.292162
+        },
+        {
+            "action": "Keldi",
+            "timestamp": "2025-09-12T09:52:02.080613",
+            "latitude": 41.350659,
+            "longitude": 69.292162
+        },
+        {
+            "action": "Ketti",
+            "timestamp": "2025-09-12T09:52:03.154411",
+            "latitude": 41.350659,
+            "longitude": 69.292162
+        }
+    ]
+}
