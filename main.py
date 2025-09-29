@@ -9,7 +9,7 @@ from calendar import monthrange
 from math import radians, cos, sin, asin, sqrt
 import openpyxl
 from datetime import date
-import pytz
+
 
 # 📍 Ishxona koordinatalari (latitude, longitude)
 WORK_LOCATION = (41.351179, 69.292921)  # Masalan: Toshkent markazi
