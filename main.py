@@ -9,6 +9,8 @@ from calendar import monthrange
 from math import radians, cos, sin, asin, sqrt
 import openpyxl
 from datetime import date
+import pytz
+
 # 📍 Ishxona koordinatalari (latitude, longitude)
 WORK_LOCATION = (41.351179, 69.292921)  # Masalan: Toshkent markazi
 MAX_DISTANCE_METERS = 100  # Lokatsiya aniqligi (necha metr radiusda ishlaydi)
@@ -16,7 +18,9 @@ CLEANUP_DAYS = 365
 DEFAULT_ADMINS = [6008741577]
 USERS_FILE = "users.json"
 ATTENDANCE_FILE = "attendance.json"
-
+TASHKENT_TZ = pytz.timezone("Asia/Tashkent")
+now = datetime.now(TASHKENT_TZ)
+timestamp = now.isoformat()
 
 ADMIN_PANEL = ReplyKeyboardMarkup(
     [
@@ -261,7 +265,7 @@ def log_attendance_json(user_id, action, location):
     data = load_json(ATTENDANCE_FILE)
     entry = {
         "action": action,
-        "timestamp": datetime.now().isoformat(),
+        "timestamp": datetime.now(ZoneInfo("Asia/Tashkent")).isoformat(),
         "latitude": location[0],
         "longitude": location[1]
     }
