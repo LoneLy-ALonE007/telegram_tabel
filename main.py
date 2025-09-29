@@ -9,7 +9,7 @@ from calendar import monthrange
 from math import radians, cos, sin, asin, sqrt
 import openpyxl
 from datetime import date
-
+from zoneinfo import ZoneInfo
 
 # 📍 Ishxona koordinatalari (latitude, longitude)
 WORK_LOCATION = (41.351179, 69.292921)  # Masalan: Toshkent markazi
@@ -18,8 +18,7 @@ CLEANUP_DAYS = 365
 DEFAULT_ADMINS = [6008741577]
 USERS_FILE = "users.json"
 ATTENDANCE_FILE = "attendance.json"
-TASHKENT_TZ = pytz.timezone("Asia/Tashkent")
-now = datetime.now(TASHKENT_TZ)
+now = datetime.now(ZoneInfo("Asia/Tashkent"))
 timestamp = now.isoformat()
 
 ADMIN_PANEL = ReplyKeyboardMarkup(
